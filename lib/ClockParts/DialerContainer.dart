@@ -23,7 +23,6 @@ class DialerContainer extends StatelessWidget {
           child: new Container(
             width: width,
             decoration: new BoxDecoration(
-              shape: BoxShape.circle,
               color: Colors.transparent,
             ),
             child: new Container(
