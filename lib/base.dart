@@ -43,26 +43,15 @@ class _BaseState extends State<Base> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Expanded(
-            child: GestureDetector(
-              child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Clock(
-                    isDark: isNight ? true : false,
-                    dateTime: dateTime,
-                  ),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Clock(
+                  isDark: isNight ? true : false,
+                  dateTime: dateTime,
                 ),
-                width: double.infinity,
               ),
-              onDoubleTap: () {
-                if (isNight) {
-                  isNight = false;
-                  setState(() {});
-                } else {
-                  isNight = true;
-                  setState(() {});
-                }
-              },
+              width: double.infinity,
             ),
           ),
           Expanded(
